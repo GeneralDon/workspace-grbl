@@ -1,5 +1,5 @@
 /* global cpdefine chilipeppr cprequire */
-cprequire_test(["inline:com-chilipeppr-workspace-grbl"], function(ws) {
+cprequire_test(["inline:com-chilipeppr-workspace-pbggrbl"], function(ws) {
 
     console.log("initting workspace");
 
@@ -27,20 +27,20 @@ cprequire_test(["inline:com-chilipeppr-workspace-grbl"], function(ws) {
     ws.init();
 
     // Do some niceties for testing like margins on widget and title for browser
-    $('title').html("grbl Workspace");
+    $('title').html("PBG grbl Workspace");
     $('body').css('padding', '10px');
 
 } /*end_test*/ );
 
 // This is the main definition of your widget. Give it a unique name.
-cpdefine("inline:com-chilipeppr-workspace-grbl", ["chilipeppr_ready"], function() {
+cpdefine("inline:com-chilipeppr-workspace-pbggrbl", ["chilipeppr_ready"], function() {
     return {
         /**
          * The ID of the widget. You must define this and make it unique.
          */
-        id: "com-chilipeppr-workspace-grbl", // Make the id the same as the cpdefine id
-        name: "Workspace / grbl", // The descriptive name of your widget.
-        desc: `A ChiliPeppr Workspace grbl.`,
+        id: "com-chilipeppr-workspace-pbggrbl", // Make the id the same as the cpdefine id
+        name: "Workspace / pbggrbl", // The descriptive name of your widget.
+        desc: `A ChiliPeppr Workspace grbl for PBG.`,
         url: "(auto fill by runme.js)", // The final URL of the working widget as a single HTML file with CSS and Javascript inlined. You can let runme.js auto fill this if you are using Cloud9.
         fiddleurl: "(auto fill by runme.js)", // The edit URL. This can be auto-filled by runme.js in Cloud9 if you'd like, or just define it on your own to help people know where they can edit/fork your widget
         githuburl: "(auto fill by runme.js)", // The backing github repo
